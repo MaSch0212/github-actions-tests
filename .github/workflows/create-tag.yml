@@ -1,0 +1,14 @@
+name: Create Tag Test
+
+on: workflow_dispatch
+
+jobs:
+  create_tag: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: rickstaa/action-create-tag@v1
+      with:
+        tag: latest
+        force_push_tag: true
