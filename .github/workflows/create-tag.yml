@@ -2,6 +2,9 @@ name: Create Tag Test
 
 on: workflow_dispatch
 
+permissions: 
+  contents: write
+
 jobs:
   create_tag: 
     runs-on: ubuntu-latest
